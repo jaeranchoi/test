@@ -14,6 +14,6 @@ export const KaonashiImage = styled.img`
   position: absolute;
   width: 150px; /* Adjust the size as needed */
   height: auto;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
   pointer-events: none;
 `;

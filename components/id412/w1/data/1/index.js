@@ -32,14 +32,14 @@ export default function DataVisual() {
         setStockPrice(stockData[prevIndex + 1]);
         return prevIndex + 1;
       });
-    }, 100); // 0.1s interval
+    }, 100); // 0.1s interval, speed of the animation, 100 > 5로 바꾸면 숫자 바뀌는 속도가 빨라짐
 
     return () => clearInterval(interval);
   }, [stockData]);
 
   return (
     <S.Container>
-      <S.Counter>{stockPrice.toFixed(2)}</S.Counter>
-    </S.Container>
+      <S.Counter>{stockPrice.toFixed(2)}</S.Counter> 
+    </S.Container> // Visualized, 2는 소수점 둘째자리까지 표시
   );
 }
