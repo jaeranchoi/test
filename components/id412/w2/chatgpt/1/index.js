@@ -34,6 +34,8 @@ export default function ChatGPT() {
     }
   }
 
+  console.log(systemContent, userContent);
+
   return (
     <S.ChatGPTContainer>
       <S.Title>Chat with GPT-4o</S.Title>
